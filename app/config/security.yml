@@ -27,3 +27,6 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
+        # If you want the site to allow only HTTPS connections,
+        # uncomment the following line
+        # - { requires_channel: https }
