@@ -77,7 +77,7 @@ Once you're feeling good, you can move onto reading the official
 What's inside?
 ---------------
 
-The Symfony Standard Edition is configured with the following defaults:
+The InfoLaverage Symfony Custom Edition is configured with the following defaults:
 
   * Twig is the only configured template engine;
 
@@ -109,17 +109,26 @@ It comes pre-configured with the following bundles:
   * [**AsseticBundle**][12] - Adds support for Assetic, an asset processing
     library
 
+  * [**FOSUserBundle**][13] - Adds support for easier and quicker user
+    management
+
   * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
     the web debug toolbar
 
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
+  * [**SensioGeneratorBundle**][14] (in dev/test env) - Adds code generation
     capabilities
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
+
+Before using FOSUserBundle, you need to create a custom user class extending the
+base user class provided by the pre-installed FOSUserBundle. To create it,
+please consult this [documentation][15]! Also, you will need to set the
+"fos_user.user_class" to your user class's fully-qualified class name in your
+config.yml.
 
 Enjoy!
 
@@ -135,4 +144,6 @@ Enjoy!
 [10]: http://symfony.com/doc/2.4/cookbook/email.html
 [11]: http://symfony.com/doc/2.4/cookbook/logging/monolog.html
 [12]: http://symfony.com/doc/2.4/cookbook/assetic/asset_management.html
-[13]: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/index.html
+[13]: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md
+[14]: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/index.html
+[15]: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md#step-3-create-your-user-class
