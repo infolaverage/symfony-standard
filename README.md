@@ -115,13 +115,16 @@ It comes pre-configured with the following bundles:
   * [**FOSJsRoutingBundle**][14] - Adds support for exposing routing in
     JavaScript code
 
+  * [**StofDoctrineExtensionsBundle**][15] - Integrates [DoctrineExtensions][16]
+    to the project, which implements several useful behaviors for Doctrine.
+
   * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
     the web debug toolbar
 
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][15] (in dev/test env) - Adds code generation
+  * [**SensioGeneratorBundle**][17] (in dev/test env) - Adds code generation
     capabilities
 
 All libraries and bundles included in the Symfony Standard Edition are
@@ -129,7 +132,7 @@ released under the MIT or BSD license.
 
 Before using FOSUserBundle, you need to create a custom user class extending the
 base user class provided by the pre-installed FOSUserBundle. To create it,
-please consult this [documentation][16]! Also, you will need to set the
+please consult this [documentation][18]! Also, you will need to set the
 "fos_user.user_class" to your user class's fully-qualified class name in your
 config.yml.
 
@@ -149,5 +152,7 @@ Enjoy!
 [12]: http://symfony.com/doc/2.4/cookbook/assetic/asset_management.html
 [13]: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md
 [14]: https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/blob/master/Resources/doc/index.md
-[15]: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/index.html
-[16]: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md#step-3-create-your-user-class
+[15]: https://github.com/stof/StofDoctrineExtensionsBundle/blob/master/Resources/doc/index.rst
+[16]: https://github.com/l3pp4rd/DoctrineExtensions/blob/master/README.md
+[17]: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/index.html
+[18]: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/index.md#step-3-create-your-user-class
