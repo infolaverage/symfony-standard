@@ -1,5 +1,5 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "infolaverage/symfony-custom",
     "license": "MIT",
     "type": "project",
     "description": "The \"Symfony Standard Edition\" distribution",
